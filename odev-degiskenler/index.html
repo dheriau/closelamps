@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    img {
+        width:  400px;
+        height: auto 400px;
+        margin: auto;
+        display: flex;
+        border-radius: 5px;
+    }
+
+    .butonDiv {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+      
+    }
+
+    .butonclass {
+        font-size: 10px;
+        font-weight: bold;
+        border: none;
+        background-color: rgb(72, 83, 83);
+        color: white;
+        padding: 10px;
+        border-radius: 3px;
+    }
+</style>
+
+
+<body>
+    
+ 
+    <div class="imgDiv">
+        <img id="photo1" src="crychild.jpg">
+         
+    </div>
+
+    <div class="butonDiv">
+        
+        <button class="butonclass" id="buton1">Chance Image</button>
+       
+      
+    </div>
+
+    <script>
+
+  
+     let resimSayaci = 0;
+    document.getElementById("buton1").onclick = function(){
+        resimSayaci++; 
+
+        if(resimSayaci == 1) {
+            document.getElementById("photo1").src = "bearandchild.jpg";
+        }
+
+        if(resimSayaci == 2) {
+            
+            document.getElementById("photo1").src = "brushteethchild.jpg";
+        }
+
+        if(resimSayaci == 3) {
+            document.getElementById("photo1").src = "songchild.jpg";
+        }
+
+        if(resimSayaci == 4){
+            document.getElementById("photo1").src = "crychild.jpg";
+        }
+
+        if(resimSayaci > 4 ) {
+            resimSayaci = 0
+        }
+
+
+    
+    }
+
+
+
+
+
+          /*
+    let img = "./bearandchild.jpg";
+    let photo1 = document.getElementById('photo1')
+    photo1.src = img
+    
+    
+    // hocaya soraılacak butona tıklayınca diğer resim çıksın.
+    
+    function imgturn() {
+        photo1=document.getElementById('photo1');
+    
+   
+    */
+    </script>
+    
+    
+
+   
+</body>
+</html>
+
